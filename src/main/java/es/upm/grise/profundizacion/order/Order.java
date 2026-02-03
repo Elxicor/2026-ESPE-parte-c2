@@ -27,7 +27,7 @@ public class Order {
         }
 
         for (Item existingItem : items) {
-            if (existingItem.getProduct().equals(item.getProduct())) {
+            if (existingItem.getProduct().getId() == item.getProduct().getId()) {
                 
                 if (existingItem.getPrice() == item.getPrice()) {
                     int newQuantity = existingItem.getQuantity() + item.getQuantity();
